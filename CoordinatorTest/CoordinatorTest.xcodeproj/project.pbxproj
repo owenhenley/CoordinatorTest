@@ -15,8 +15,9 @@
 		27E3473C254C6C0200D7F3DC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27E3473A254C6C0200D7F3DC /* LaunchScreen.storyboard */; };
 		27E34747254C6C0200D7F3DC /* CoordinatorTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27E34746254C6C0200D7F3DC /* CoordinatorTestTests.swift */; };
 		27E34752254C6C0200D7F3DC /* CoordinatorTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27E34751254C6C0200D7F3DC /* CoordinatorTestUITests.swift */; };
-		27E34763254C6C3300D7F3DC /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27E34762254C6C3300D7F3DC /* MainCoordinator.swift */; };
+		27E34763254C6C3300D7F3DC /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27E34762254C6C3300D7F3DC /* Coordinator.swift */; };
 		27E3476B254C6CD500D7F3DC /* Storyboarded.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27E3476A254C6CD500D7F3DC /* Storyboarded.swift */; };
+		27E34D9C25503E1A00D7F3DC /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27E34D9B25503E1A00D7F3DC /* MainCoordinator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,8 +52,9 @@
 		27E3474D254C6C0200D7F3DC /* CoordinatorTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoordinatorTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		27E34751254C6C0200D7F3DC /* CoordinatorTestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorTestUITests.swift; sourceTree = "<group>"; };
 		27E34753254C6C0200D7F3DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		27E34762254C6C3300D7F3DC /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
+		27E34762254C6C3300D7F3DC /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		27E3476A254C6CD500D7F3DC /* Storyboarded.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storyboarded.swift; sourceTree = "<group>"; };
+		27E34D9B25503E1A00D7F3DC /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,7 +112,8 @@
 				27E34738254C6C0200D7F3DC /* Assets.xcassets */,
 				27E3473A254C6C0200D7F3DC /* LaunchScreen.storyboard */,
 				27E3473D254C6C0200D7F3DC /* Info.plist */,
-				27E34762254C6C3300D7F3DC /* MainCoordinator.swift */,
+				27E34762254C6C3300D7F3DC /* Coordinator.swift */,
+				27E34D9B25503E1A00D7F3DC /* MainCoordinator.swift */,
 				27E3476A254C6CD500D7F3DC /* Storyboarded.swift */,
 			);
 			path = CoordinatorTest;
@@ -265,7 +268,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				27E34734254C6C0000D7F3DC /* ViewController.swift in Sources */,
-				27E34763254C6C3300D7F3DC /* MainCoordinator.swift in Sources */,
+				27E34D9C25503E1A00D7F3DC /* MainCoordinator.swift in Sources */,
+				27E34763254C6C3300D7F3DC /* Coordinator.swift in Sources */,
 				27E3476B254C6CD500D7F3DC /* Storyboarded.swift in Sources */,
 				27E34730254C6C0000D7F3DC /* AppDelegate.swift in Sources */,
 				27E34732254C6C0000D7F3DC /* SceneDelegate.swift in Sources */,

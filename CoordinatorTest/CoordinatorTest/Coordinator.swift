@@ -1,5 +1,5 @@
 //
-//  MainCoordinator.swift
+//  Coordinator.swift
 //  CoordinatorTest
 //
 //  Created by Owen Henley on 30/10/2020.
