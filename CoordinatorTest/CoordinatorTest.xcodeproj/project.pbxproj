@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		275D2C35256D161300503007 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 275D2C34256D161300503007 /* MainTabBarController.swift */; };
+		275D2C3A256D171D00503007 /* BuyingProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 275D2C39256D171D00503007 /* BuyingProtocol.swift */; };
+		275D2C3F256D173F00503007 /* AccountCreatingProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 275D2C3E256D173F00503007 /* AccountCreatingProtocol.swift */; };
 		27BF356F2552C75100388DE5 /* BuyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27BF356E2552C75100388DE5 /* BuyViewController.swift */; };
 		27BF35742552C76300388DE5 /* CreateAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27BF35732552C76300388DE5 /* CreateAccountViewController.swift */; };
 		27BF35812552C78F00388DE5 /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27BF35802552C78F00388DE5 /* MainCoordinator.swift */; };
@@ -41,6 +44,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		275D2C34256D161300503007 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
+		275D2C39256D171D00503007 /* BuyingProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuyingProtocol.swift; sourceTree = "<group>"; };
+		275D2C3E256D173F00503007 /* AccountCreatingProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountCreatingProtocol.swift; sourceTree = "<group>"; };
 		27BF356E2552C75100388DE5 /* BuyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuyViewController.swift; sourceTree = "<group>"; };
 		27BF35732552C76300388DE5 /* CreateAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountViewController.swift; sourceTree = "<group>"; };
 		27BF35802552C78F00388DE5 /* MainCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
@@ -107,6 +113,7 @@
 				27BF35802552C78F00388DE5 /* MainCoordinator.swift */,
 				27E3476A254C6CD500D7F3DC /* Storyboarded.swift */,
 				27BF358E2552CC3700388DE5 /* BuyCoordinator.swift */,
+				275D2C34256D161300503007 /* MainTabBarController.swift */,
 			);
 			path = Navigation;
 			sourceTree = "<group>";
@@ -140,6 +147,8 @@
 				27BF35732552C76300388DE5 /* CreateAccountViewController.swift */,
 				27BF357C2552C77C00388DE5 /* Navigation */,
 				27BF35782552C77000388DE5 /* Resources */,
+				275D2C39256D171D00503007 /* BuyingProtocol.swift */,
+				275D2C3E256D173F00503007 /* AccountCreatingProtocol.swift */,
 			);
 			path = CoordinatorTest;
 			sourceTree = "<group>";
@@ -294,11 +303,14 @@
 			files = (
 				27BF358F2552CC3700388DE5 /* BuyCoordinator.swift in Sources */,
 				27E34734254C6C0000D7F3DC /* HomeViewController.swift in Sources */,
+				275D2C35256D161300503007 /* MainTabBarController.swift in Sources */,
 				27E34763254C6C3300D7F3DC /* Coordinator.swift in Sources */,
 				27E3476B254C6CD500D7F3DC /* Storyboarded.swift in Sources */,
 				27BF35742552C76300388DE5 /* CreateAccountViewController.swift in Sources */,
 				27E34730254C6C0000D7F3DC /* AppDelegate.swift in Sources */,
 				27BF356F2552C75100388DE5 /* BuyViewController.swift in Sources */,
+				275D2C3F256D173F00503007 /* AccountCreatingProtocol.swift in Sources */,
+				275D2C3A256D171D00503007 /* BuyingProtocol.swift in Sources */,
 				27BF35812552C78F00388DE5 /* MainCoordinator.swift in Sources */,
 				27E34732254C6C0000D7F3DC /* SceneDelegate.swift in Sources */,
 			);

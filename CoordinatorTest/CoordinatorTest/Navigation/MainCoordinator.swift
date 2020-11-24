@@ -7,7 +7,8 @@
 
 import UIKit
 
-class MainCoordinator: NSObject, Coordinator, UINavigationControllerDelegate {
+class MainCoordinator: NSObject, Coordinator, Buying, AccountCreating, UINavigationControllerDelegate {
+    
     var childCoordinators = [Coordinator]()
     var navigationController: UINavigationController
 
@@ -18,6 +19,7 @@ class MainCoordinator: NSObject, Coordinator, UINavigationControllerDelegate {
     func start() {
         let vc = HomeViewController.instantiate()
         vc.coordinator = self
+        vc.tabBarItem = UITabBarItem(tabBarSystemItem: .favorites, tag: 0)
         navigationController.delegate = self
         navigationController.pushViewController(vc, animated: false)
     }
@@ -25,13 +27,24 @@ class MainCoordinator: NSObject, Coordinator, UINavigationControllerDelegate {
     func buySubscription() {
         let child = BuyCoordinator(navigationController: navigationController)
         child.parentCoordinator = self
+        
         childCoordinators.append(child)
         child.start()
     }
 
+//    func buySubscription(to productType: Int) {
+//        let vc = BuyViewController.instantiate()
+//        vc.selectedProduct = productType
+//        vc.coordinator = self
+//        navigationController.pushViewController(vc, animated: true)
+//    }
+    
     func createAccount() {
         let vc = CreateAccountViewController.instantiate()
         vc.coordinator = self
+//        vc.createAccountAction = { [weak self] in
+//            self?.createAccount()
+//        }
         navigationController.pushViewController(vc, animated: true)
     }
     

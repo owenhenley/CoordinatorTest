@@ -9,8 +9,11 @@ import UIKit
 
 class HomeViewController: UIViewController, Storyboarded {
     
-    weak var coordinator: MainCoordinator?
+    weak var coordinator: (Buying & AccountCreating)?
     
+    var buyAction: (() -> Void)?
+    var createAccountAction: (() -> Void)?
+
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .white
@@ -23,11 +26,13 @@ class HomeViewController: UIViewController, Storyboarded {
     // MARK: - Actions
     
     @IBAction func buyTapped(_ sender: Any) {
-        coordinator?.buySubscription()
+//        coordinator?.buySubscription()
+        buyAction?()
     }
     
     @IBAction func createAccountTapped(_ sender: Any) {
-        coordinator?.createAccount()
+//        coordinator?.createAccount()
+        createAccountAction?()
     }
 }
 
